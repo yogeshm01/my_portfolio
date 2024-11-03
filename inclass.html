@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Striped Page Design</title>
+    <style>
+        #header {
+            color:white;
+            background-color: red;
+            height: 25px;
+            font-weight: bold;
+
+        }
+        .content div{
+            height: 50px;
+            background-color: yellow;
+        }
+        .content div:nth-child(odd) {
+            background-color: green;
+        }
+
+        #footer {
+            height: 25px;
+            background-color: blue;
+            color:white;
+            font-style: italic;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="header">Heading Goes Here</div>
+    <div class="content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="footer">Page Number Goes Here</div>
+
+</body>
+</html>

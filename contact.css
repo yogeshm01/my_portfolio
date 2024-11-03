@@ -1,0 +1,241 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+.nav-container .logo img{
+    width: 140px;
+    height: 38px;
+}
+
+/* Main Contact Section */
+.contact-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1em;
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+input:focus, textarea:focus {
+    border-color: #fca61f;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fca61f;
+    color: #fff;
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1.5rem;
+}
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Location Text */
+.footer-text {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Navigation */
+nav{
+    z-index: 4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    backdrop-filter: brightness(100%);
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.nav-container .links a{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover{
+    color: #fca61f;
+}
+
+nav button{
+    width: 150px;
+    height: 40px;
+    border-radius:20px;
+    background-color: #fca61f;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s linear;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px #fca61f;
+    border: none;
+    outline: none;
+}
+
+nav button:hover{
+    background-color:white;
+    color: #fca61f;
+    border:2px solid #fca61f;
+}
+
+nav svg{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .dropmenu{
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    transform: translateY(-300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s linear;
+}
+/* Projects Section */
+.projects-section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+/* Main container styling */
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Paragraph styling */
+  .right-content p {
+    padding-bottom: 10px;
+    font-size: 1.125rem; /* Default text size for mobile (text-lg) */
+  }
+  
+  /* Media query to adjust text size for larger screens */
+  @media (min-width: 768px) {
+    .right-content p {
+      font-size: 1.5rem; /* Adjusts text size for medium screens (md:text-2xl) */
+    }
+  }
+  
+  /* Social icons container */
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Social icon styling */
+  .social-icons a img {
+    border-radius: 50%;
+    width: 3rem; /* Default icon size for mobile (w-16 h-16) */
+    height: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Icon size for larger screens */
+  @media (min-width: 768px) {
+    .social-icons a img {
+      width: 6rem; /* Icon size for medium screens (md:w-24 md:h-24) */
+      height: 6rem;
+    }
+  }
+  
+  /* Hover effect for icons */
+  .social-icons a img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  }
+  
