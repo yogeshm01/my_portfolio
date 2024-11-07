@@ -207,7 +207,7 @@ nav .dropmenu{
   /* Media query to adjust text size for larger screens */
   @media (min-width: 768px) {
     .right-content p {
-      font-size: 1.5rem; /* Adjusts text size for medium screens (md:text-2xl) */
+      font-size: 1.5rem; 
     }
   }
   
@@ -220,23 +220,23 @@ nav .dropmenu{
   /* Social icon styling */
   .social-icons a img {
     border-radius: 50%;
-    width: 3rem; /* Default icon size for mobile (w-16 h-16) */
+    width: 3rem; 
     height: 3rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
   }
   
   /* Icon size for larger screens */
   @media (min-width: 768px) {
     .social-icons a img {
-      width: 6rem; /* Icon size for medium screens (md:w-24 md:h-24) */
+      width: 6rem; 
       height: 6rem;
     }
   }
   
   /* Hover effect for icons */
   .social-icons a img:hover {
-    transform: scale(1.1); /* Slightly increase size on hover */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
   }
   @media (max-width:768px){
     .links{
