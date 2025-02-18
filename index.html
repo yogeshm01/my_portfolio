@@ -6,6 +6,8 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 <body>
     <nav>
@@ -14,22 +16,24 @@
                 <img src="logo.png" alt="" >
             </div>
             <div class="links">
-                <a href="index.html">Home</a>
-                <a href="aboutUs.html">About</a>
-                <a href="project.html">Projects</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
             </div>
             <button onclick="window.location.href='contact.html'">Contact Me</button>
             <svg xmlns="http://www.w3.org/2000/svg" class="hamburg" height="32" width="34" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
         </div>
         <div class="dropmenu">
-            <a href="index.html">Home</a>
-            <a href="aboutUs.html">About</a>
-            <a href="project.html">Projects</a>    
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>    
             <button onclick="window.location.href='contact.html'">Contact Me</button>
             <svg xmlns="http://www.w3.org/2000/svg" class="cancel" height="36" width="32" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
         </div>
     </nav>
-    <section>
+    
+    <!-- Home Section -->
+    <section id="home">
         <div class="content">
             <div class="main-content">
                 <h1 data-aos="fade-right" data-aos-duration="1500">Hi! I Am</h1>
@@ -37,34 +41,240 @@
                 <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400">I am a student at Newton School of Technology in CSE Branch.</p>
                 <div class="buttons">
                     <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600" onclick="window.location.href='contact.html'">Hire me</button>
-                    <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600" onclick="window.location.href='project.html'">See my Work</button>
+                    <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600" onclick="window.location.href='#projects'">See my Work</button>
                     <a href="Resume_Yogesh_Mishra.pdf" download="Yogesh_Mishra_Resume.pdf">
                         <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">Resume</button>
                     </a>
                 </div>
 
                 <div class="social-links">
-                    <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600"><a href="https://github.com/yogeshm01" target="_blank" class="social-icon">
-                        <img src="github.png" alt="GitHub" style="height: 40px;">
-                    </a><span style="font-weight: 100;">GitHub</span></button>
-                    
-
-                    <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600"><a href="mailto:yogeshm0501@gmail.com" target="_blank" class="social-icon">
-                        <img src="gmail.png" alt="Gmail" style="height: 40px;">
-                    </a><span style="font-weight: 100;">Gmail</span></button>
-                    
-                    <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600"><a href="https://www.linkedin.com/in/yogeshm01" target="_blank" class="social-icon">
-                        <img src="linkedin.png" alt="LinkedIn" style="height: 40px;">
-                    </a><span style="font-weight: 100;">Linkedin</span></button>
-                    
+                    <a href="https://github.com/yogeshm01" target="_blank" class="social-icon">
+                        <img src="github.png" alt="GitHub">
+                    </a>
+                    <a href="mailto:yogeshm0501@gmail.com" target="_blank" class="social-icon">
+                        <img src="gmail.png" alt="Gmail">
+                    </a>
+                    <a href="https://www.linkedin.com/in/yogeshm01" target="_blank" class="social-icon">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.leetcode.com/yogeshm01" target="_blank" class="social-icon">
+                        <img src="leetcode.png" alt="LeetCode">
+                    </a>
+                    <a href="https://www.codeforces.com/yogeshm01" target="_blank" class="social-icon" id="codeforces">
+                        <img src="codeforces.png" alt="Codeforces">
+                    </a>
                 </div>
+                
             </div>
-            
             <div class="image">
                 <img src="pfp.png" data-aos="zoom-out" data-aos-duration="2000" style="border-radius: 50%;">
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 data-aos="fade-up" data-aos-duration="1000">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>My Journey</h3>
+                    <p>
+                        I'm <strong>Yogesh Mishra</strong>, a passionate <strong>B.Tech Computer Science & AI</strong> student at Newton School of Technology.  
+                        I specialize in <strong>web development, competitive programming.</strong>.
+                    </p>
+                    <p>
+                        With expertise in <strong>JavaScript, Python, and DBMS</strong>, I have built projects like 
+                        <em>AI-powered voice assistants, Real-Time Weather App, 2048 game and etc.</em>.  
+                        I enjoy solving algorithmic challenges on various coding platforms.
+                    </p>
+                    <p>
+                        <strong>Competitive Programming Ratings:</strong><br>
+                        🔹 LeetCode: <strong>1650</strong> <br>
+                        🔹 Codeforces: <strong>1179</strong>  
+                    </p>
+                    <p>
+                        My goal is to <strong>build innovative and efficient tech solutions</strong> while continuously learning new technologies.  
+                        Let’s connect and create something amazing! 🚀
+                    </p>
+                    <div class="skills">
+                        <h4>Skills</h4>
+                        <div class="skill-tags">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>C++</span>
+                            <span>Python</span>
+                            <span>MongoDB</span>
+                            <span>SQL</span>
+                            <span>Git</span>
+                            <span>Web-API</span>
+                            <span>Competitve Programming</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Coding">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            <h2 data-aos="fade-up" data-aos-duration="1000">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="project-image">
+                        <img src="jarvis.png" alt="E-Commerce Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Jarvis AI</h3>
+                        <p>A voice-activated assistant built with HTML, CSS, JS, and Web APIs for real-time, hands-free search and AI-powered query responses.</p>
+                        <div class="project-tech">
+                            <span>AI</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yogeshm01/jarvis_assistant" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://jarvis-assistant-three.vercel.app/" class="project-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="weather2.png" alt="Weather Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather tracking application with detailed forecasts</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Weather API</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yogeshm01/weather_app" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://weather-app-pi-khaki-74.vercel.app/" class="project-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="2048.png" alt="Task Management">
+                    </div>
+                    <div class="project-info">
+                        <h3>2048 Game</h3>
+                        <p>Developed the classic 2048 game using HTML, CSS, and JavaScript with smooth animations and interactive gameplay.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Keyboard-Support</span>
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yogeshm01/2048_game" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://2048-game-zeta-nine.vercel.app/" class="project-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="2048.png" alt="Task Management">
+                    </div>
+                    <div class="project-info">
+                        <h3>2048 Game</h3>
+                        <p>Developed the classic 2048 game using HTML, CSS, and JavaScript with smooth animations and interactive gameplay.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Keyboard-Support</span>
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yogeshm01/2048_game" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://2048-game-zeta-nine.vercel.app/" class="project-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="2048.png" alt="Task Management">
+                    </div>
+                    <div class="project-info">
+                        <h3>2048 Game</h3>
+                        <p>Developed the classic 2048 game using HTML, CSS, and JavaScript with smooth animations and interactive gameplay.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Keyboard-Support</span>
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yogeshm01/2048_game" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://2048-game-zeta-nine.vercel.app/" class="project-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="2048.png" alt="Task Management">
+                    </div>
+                    <div class="project-info">
+                        <h3>2048 Game</h3>
+                        <p>Developed the classic 2048 game using HTML, CSS, and JavaScript with smooth animations and interactive gameplay.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Keyboard-Support</span>
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yogeshm01/2048_game" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://2048-game-zeta-nine.vercel.app/" class="project-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com/yogeshm01" target="_blank" class="github">
+                <i class="ri-github-fill"></i>
+            </a>
+            <a href="mailto:yogeshm0501@gmail.com" target="_blank" class="gmail">
+                <i class="ri-mail-line"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yogeshm01" target="_blank" class="linkedin">
+                <i class="ri-linkedin-fill"></i>
+            </a>
+        </div>
+        <p class="footer-text">&copy; 2024 Yogesh Mishra. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({offset:1});
