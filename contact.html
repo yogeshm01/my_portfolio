@@ -1,85 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Section</title>
-        <link rel="stylesheet" href="contact.css"> 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
 <body>
-
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <img src="logo.png" alt="">
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in Touch</h2>
+                <hr>
             </div>
-            <div class="links">
-                <a href="index.html">Home</a>
-                <a href="aboutUs.html">About</a>
-                <a href="project.html">Projects</a>
-            </div>
-            <button onclick="window.location.href='contact.html'">Contact Me</button> 
-            <svg xmlns="http://www.w3.org/2000/svg" class="hamburg" height="32" width="34" viewBox="0 0 448 512">
-                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32-14.3 32 32z"/>
-            </svg>
-        </div>
-        <div class="dropmenu">
-            <a href="index.html">Home</a>
-            <a href="aboutUs.html">About us</a>
-            <a href="project.html">Projects</a>    
-            <button onclick="window.location.href='contact.html'">Contact Me</button>
-            <svg xmlns="http://www.w3.org/2000/svg" class="cancel" height="36" width="32" viewBox="0 0 384 512">
-                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
-            </svg>
-        </div>
-    </nav>
-    <!-- Contact Section -->
-    <section class="projects-section">
-    <div id="contact" class="relative bg-white h-screen">
-        <!-- Header -->
-        <div class="header md:px-14 md:py-14 px-7 py-14">
-            <h1 class="md:text-5xl text-4xl text-black font-body">Contact</h1>
-        </div>
-
-        <div class="flex md:flex-row flex-col items-center justify-center mx-14 mb-14">
-            <!-- Left Content -->
-            <div class="left-content flex-1 flex-col items-stretch">
-                <p class="pb-10 font-body md:text-xl text-lg">
-                    <!-- Contact Information -->
-                </p>
-
-                <!-- Contact Form -->
-                <form method="POST" action="https://getform.io/f/bzyyyxra" class="form-container flex flex-col justify-center max-w-[700px]">
-                    <input class="bg-gray p-2" type="text" placeholder="Name" name="name" required/>
-                    <input class="my-4 p-2 bg-gray" type="email" placeholder="Email" name="email" required/>
-                    <textarea class="bg-gray p-2" name="message" rows="10" placeholder="Message" required></textarea>
-                    <button class="btn-live my-4 hover:bg-white border-black bg-black text-white transition duration-500">Send me</button>
-                </form>
-            </div>
-
-            <!-- Right Content - Social Media Links -->
-            <div class="right-content flex-1 flex flex-col justify-center items-center">
-                <p class="pb-10 text-lg md:text-2xl">Or you can find me on other social media platforms like</p>
-                <div class="social-icons flex gap-10">
-                    <a href="https://github.com/yogeshm01" target="_blank">
-                        <img src="github.png" alt="GitHub" class="rounded-full md:w-24 md:h-24 w-16 h-16" style="height: 60px; width: 60px; "/>
-                    </a>
-                    <a href="https://linkedin.com/in/yogeshm01" target="_blank">
-                        <img src="linkedin.png" alt="LinkedIn" class="rounded-full md:w-24 md:h-24 w-16 h-16" style="height: 60px; width: 60px;"/>
-                    </a>
-                    <a href="mailto:yogeshm0501@gmail.com" target="_blank">
-                        <img src="gmail.png" alt="Gmail" class="rounded-full md:w-24 md:h-24 w-16 h-16" style="height: 60px; width: 60px;"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer Location Text -->
-        <div class="absolute bottom-3 right-2">
-            <p class="md:text-5xl text-3xl font-logo">2024, Sonipat, India</p>
+            <input type="hidden" name="access_key" value="9773517b-6a72-4179-967b-91adf6092470">
+            <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="text" name="email" id="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit" >Submit <img src="assets/arrow_icon.png"></button>
+        </form>
+        <div class="contact-right">
+            <img src="assets/right_img3.png" alt="">
         </div>
     </div>
-</section>
-
 </body>
 </html>
