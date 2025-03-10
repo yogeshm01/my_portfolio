@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact - Yogesh Mishra</title>
     <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="hamburg" height="32" width="34" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+        <div class="dropmenu">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="cancel" height="36" width="32" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </div>
+    </nav>
+
     <div class="contact-container">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
@@ -15,13 +36,54 @@
             </div>
             <input type="hidden" name="access_key" value="9773517b-6a72-4179-967b-91adf6092470">
             <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required>
-            <input type="text" name="email" id="email" placeholder="Your Email" class="contact-inputs" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" class="contact-inputs" required>
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-            <button type="submit" >Submit <img src="assets/arrow_icon.png"></button>
+            <button type="submit">Send Message</button>
         </form>
         <div class="contact-right">
-            <img src="assets/right_img3.png" alt="">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800" alt="Contact">
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/yogeshm01" target="_blank" class="github">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="mailto:yogeshm0501@gmail.com" target="_blank" class="gmail">
+                    <i class="ri-mail-line"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yogeshm01" target="_blank" class="linkedin">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+            </div>
+            <p class="footer-text">&copy; 2024 Yogesh Mishra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburg = document.querySelector('.hamburg')
+        const cancel = document.querySelector('.cancel')
+        const navbar = document.querySelector('.dropmenu');
+        
+        hamburg.addEventListener('click', ()=>{
+            navbar.style.transform = "translateY(0px)"
+            hamburg.style.display = 'none'
+        })
+        cancel.addEventListener('click', ()=>{
+            navbar.style.transform = "translateY(-300px)"
+            hamburg.style.display = 'block'
+        })
+    </script>
 </body>
 </html>
