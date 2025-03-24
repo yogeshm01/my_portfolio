@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Yogesh Mishra - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/pfp.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="portfolio.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <img src="images/logo.png" alt="" >
+                <img src="images/logo.png" alt="Logo">
             </div>
             <div class="links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
             </div>
-            <button onclick="window.location.href='contact.html'">Contact Me</button>
-            <svg xmlns="http://www.w3.org/2000/svg" class="hamburg" height="32" width="34" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="ri-sun-line light-icon"></i>
+                    <i class="ri-moon-line dark-icon"></i>
+                </button>
+                <button onclick="window.location.href='contact.html'" class="contact-btn">Contact Me</button>
+            </div>
+            <i class="ri-menu-line hamburg"></i>
         </div>
         <div class="dropmenu">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>    
             <button onclick="window.location.href='contact.html'">Contact Me</button>
-            <svg xmlns="http://www.w3.org/2000/svg" class="cancel" height="36" width="32" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            <i class="ri-close-line cancel"></i>
         </div>
     </nav>
     
@@ -51,7 +57,7 @@
                     <a href="https://github.com/yogeshm01" target="_blank" class="social-icon">
                         <img src="images/github.png" alt="GitHub">
                     </a>
-                    <a href="mailto:yogeshm0501@gmail.com" target="_blank" class="social-icon">
+                    <a href="mailto:example@gmail.com" target="_blank" class="social-icon">
                         <img src="images/gmail.png" alt="Gmail">
                     </a>
                     <a href="https://www.linkedin.com/in/yogeshm01" target="_blank" class="social-icon">
@@ -61,7 +67,7 @@
                         <img src="images/leetcode.png" alt="LeetCode">
                     </a>
                     <a href="https://www.codeforces.com/yogeshm01" target="_blank" class="social-icon" id="codeforces">
-                        <img src="images/codeforces.png" alt="Codeforces">
+                        <img src="images/codeforces2.png" alt="Codeforces">
                     </a>
                 </div>
                 
@@ -76,48 +82,162 @@
     <section id="about" class="about-section">
         <div class="about-container">
             <h2 data-aos="fade-up" data-aos-duration="1000">About Me</h2>
+            
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
-                    <h3>My Journey</h3>
+                    <div class="section-title">
+                        <div class="title-accent"></div>
+                        <h3>My Journey</h3>
+                    </div>
+                    
                     <p>
-                        I'm <strong>Yogesh Mishra</strong>, a passionate <strong>B.Tech Computer Science & AI</strong> student at Newton School of Technology.  
-                        I specialize in <strong>web development, competitive programming.</strong>.
+                        I'm <strong>Yogesh Mishra</strong>, a <strong>B.Tech CS & AI</strong> student at Newton School of Technology, passionate about building innovative solutions through code. With a strong foundation in algorithms, data structures, and software development, I excel in problem-solving and thrive in competitive programming challenges. Through hands-on projects, I continuously enhance my skills, aiming to leverage technology for meaningful impact.
                     </p>
-                    <p>
-                        With expertise in <strong>JavaScript, Python, and DBMS</strong>, I have built projects like 
-                        <em>AI-powered voice assistants, Real-Time Weather App, 2048 game and etc.</em>.  
-                        I enjoy solving algorithmic challenges on various coding platforms.
-                    </p>
-                    <p>
-                        <strong>Competitive Programming Ratings:</strong><br>
-                        🔹 LeetCode: <strong>1650</strong> <br>
-                        🔹 Codeforces: <strong>1179</strong>  
-                    </p>
-                    <p>
-                        My goal is to <strong>build innovative and efficient tech solutions</strong> while continuously learning new technologies.  
-                        Let’s connect and create something amazing! 🚀
-                    </p>
-                    <div class="skills">
-                        <h4>Skills</h4>
-                        <div class="skill-tags">
-                            <span>JavaScript</span>
-                            <span>React</span>
-                            <span>C++</span>
-                            <span>Python</span>
-                            <span>MongoDB</span>
-                            <span>SQL</span>
-                            <span>Git</span>
-                            <span>Web-API</span>
-                            <span>Competitve Programming</span>
+                    
+                    
+                    
+                    <div class="tabs-container">
+                        <input type="radio" id="tab1" name="tabs" checked>
+                        <input type="radio" id="tab2" name="tabs">
+                        <input type="radio" id="tab3" name="tabs">
+                        
+                        <div class="tabs-header">
+                            <label for="tab1" class="tab-label">Technical Skills</label>
+                            <label for="tab2" class="tab-label">Education</label>
+                            <label for="tab3" class="tab-label">Achievements</label>
+                        </div>
+                        
+                        <div class="tabs-content">
+                            <div class="tab-panel" id="skills-panel">
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <i class="ri-code-line skill-icon"></i>
+                                        <div>
+                                            <h4>Frontend Development</h4>
+                                            <p>JavaScript, React, HTML/CSS, Tailwind CSS</p>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="ri-cpu-line skill-icon"></i>
+                                        <div>
+                                            <h4>Programming Languages</h4>
+                                            <p>C++, Python, JavaScript</p>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="ri-database-2-line skill-icon"></i>
+                                        <div>
+                                            <h4>Database & Backend</h4>
+                                            <p>SQL, Web APIs</p>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="ri-award-line skill-icon"></i>
+                                        <div>
+                                            <h4>Problem Solving</h4>
+                                            <p>Competitive Programming, Data Structures, Algorithms</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-tags">
+                                    <span>JavaScript</span>
+                                    <span>React</span>
+                                    <span>C++</span>
+                                    <span>Python</span>
+                                    <span>Pandas</span>
+                                    <span>SQL</span>
+                                    <span>Git</span>
+                                    <span>Web-API</span>
+                                    <span>Competitive Programming</span>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-panel" id="education-panel">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4>B.Tech in Computer Science & AI</h4>
+                                        <p class="institution">Newton School of Technology</p>
+                                        <p class="period">2024 - Present</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4>Intermediate (Class XII)</h4>
+                                        <p class="institution">Science & CS</p>
+                                        <p class="period">2023 - 2024</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4>Matriculation (Class X)</h4>
+                                        <p class="institution">Science & Mathematics</p>
+                                        <p class="period">2021 - 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-panel" id="achievements-panel">
+                                <div class="achievement-group">
+                                    <div class="achievement-header">
+                                        <i class="ri-award-line achievement-icon"></i>
+                                        <h4>Competitive Programming</h4>
+                                    </div>
+                                    <ul class="achievement-list">
+                                        <li>
+                                            <i class="ri-arrow-right-s-line list-icon"></i>
+                                            LeetCode Rating: <strong>1807</strong>
+                                        </li>
+                                        <li>
+                                            <i class="ri-arrow-right-s-line list-icon"></i>
+                                            Codeforces Rating: <strong>1215</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="achievement-group">
+                                    <div class="achievement-header">
+                                        <i class="ri-book-open-line achievement-icon"></i>
+                                        <h4>Projects & Hackathons</h4>
+                                    </div>
+                                    <ul class="achievement-list">
+                                        <li>
+                                            <i class="ri-arrow-right-s-line list-icon"></i>
+                                            Developed 6+ Frontend web applications
+                                        </li>
+                                        <li>
+                                            <i class="ri-arrow-right-s-line list-icon"></i>
+                                            Participated in SIH
+                                        </li>
+                                        <li>
+                                            <i class="ri-arrow-right-s-line list-icon"></i>
+                                            Created Jarvis AI Assistant with voice recognition
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Coding">
+                        <div class="image-accent"></div>
+                        
+                        <div class="stat-card top-left">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years of Coding</div>
+                        </div>
+                        
+                        <div class="stat-card bottom-right">
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">Projects Completed</div>
                         </div>
                     </div>
                 </div>
-                <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Coding">
-                </div>
             </div>
         </div>
-        
     </section>
 
     <!-- Projects Section -->
@@ -146,44 +266,45 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="project-image">
-                        <img src="images/weather2.png" alt="Weather Dashboard">
+                        <img src="images/OutfitHub.png" alt="Task Management">
                     </div>
                     <div class="project-info">
-                        <h3>Weather Dashboard</h3>
-                        <p>Real-time weather tracking application with detailed forecasts</p>
+                        <h3>OutfitHub</h3>
+                        <p>Developed and launched OutfitHub, a responsive e-commerce platform offering fashion products for men, women, and children.</p>
                         <div class="project-tech">
                             <span>JavaScript</span>
-                            <span>Weather API</span>
+                            <span>Tailwind CSS</span>
+                            <span>React</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yogeshm01/outfit_hub" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://outfithub-yogeshm01.vercel.app/" class="project-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="images/CPAnalyzer.png" alt="CPAnalyzer">
+                    </div>
+                    <div class="project-info">
+                        <h3>CPAnalyzer</h3>
+                        <p>Developed a CP Analyzer website to track coding performance, recommend daily practice problems, and analyze code.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>APIs</span>
                             <span>CSS</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/yogeshm01/weather_app" target="_blank" class="project-btn">GitHub</a>
-                            <a href="https://weather-app-pi-khaki-74.vercel.app/" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/yogeshm01/CPAnalyzer" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://cp-analyzer-two.vercel.app/" class="project-btn">Live Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="images/2048.png" alt="Task Management">
-                    </div>
-                    <div class="project-info">
-                        <h3>2048 Game</h3>
-                        <p>Developed the classic 2048 game using HTML, CSS, and JavaScript with smooth animations and interactive gameplay.</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Keyboard-Support</span>
-                            <span>Material-UI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/yogeshm01/2048_game" target="_blank" class="project-btn">GitHub</a>
-                            <a href="https://2048-game-zeta-nine.vercel.app/" class="project-btn">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
                 <!-- Project 4 -->
                 <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="project-image">
@@ -203,95 +324,121 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Project 5 -->
-                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="project-image">
-                        <img src="images/airport.jpg" alt="Task Management">
+                        <img src="images/weather2.png" alt="Weather Dashboard">
                     </div>
                     <div class="project-info">
-                        <h3>Airport Database Management</h3>
-                        <p>Developed an Airport Database Management System using Python and MySQL with seamless database connectivity.</p>
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather tracking application with detailed forecasts</p>
                         <div class="project-tech">
-                            <span>My SQL</span>
-                            <span>Python</span>
-                            <span>Python My SQL connector</span>
+                            <span>JavaScript</span>
+                            <span>Weather API</span>
+                            <span>CSS</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/yogeshm01/Airport_Database" target="_blank" class="project-btn">GitHub</a>
-                            <a href="https://github.com/yogeshm01/Airport_Database" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/yogeshm01/weather_app" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://weather-app-pi-khaki-74.vercel.app/" class="project-btn">Live Demo</a>
                         </div>
                     </div>
                 </div>
+
+
                 <!-- Project 6 -->
                 <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="project-image">
-                        <img src="images/OutfitHub.png" alt="Task Management">
+                        <img src="images/2048.png" alt="2048 Game">
                     </div>
                     <div class="project-info">
-                        <h3>OutfitHub</h3>
-                        <p>Developed and launched OutfitHub, a responsive e-commerce platform offering fashion products for men, women, and children.</p>
+                        <h3>2048 Game</h3>
+                        <p>Developed the classic 2048 game using HTML, CSS, and JavaScript with smooth animations and interactive gameplay.</p>
                         <div class="project-tech">
                             <span>JavaScript</span>
-                            <span>Tailwind CSS</span>
-                            <span>React</span>
+                            <span>Keyboard-Support</span>
+                            <span>Material-UI</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/yogeshm01/outfit_hub" target="_blank" class="project-btn">GitHub</a>
-                            <a href="https://outfithub-yogeshm01.vercel.app/" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/yogeshm01/2048_game" target="_blank" class="project-btn">GitHub</a>
+                            <a href="https://2048-game-zeta-nine.vercel.app/" class="project-btn">Live Demo</a>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Additional projects can be added here -->
             </div>
         </div>
     </section>
 
     <!-- Footer Section -->
-    <!-- Footer Section -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="images/logo.png" alt="Logo">
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/yogeshm01" target="_blank" class="github">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="mailto:example@gmail.com" target="_blank" class="gmail">
+                    <i class="ri-mail-line"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yogeshm01" target="_blank" class="linkedin">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+            </div>
+            <p class="footer-text">&copy; 2024 Yogesh Mishra. All Rights Reserved.</p>
         </div>
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="footer-social">
-            <a href="https://github.com/yogeshm01" target="_blank" class="github">
-                <i class="ri-github-fill"></i>
-            </a>
-            <a href="mailto:yogeshm0501@gmail.com" target="_blank" class="gmail">
-                <i class="ri-mail-line"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/yogeshm01" target="_blank" class="linkedin">
-                <i class="ri-linkedin-fill"></i>
-            </a>
-        </div>
-        <p class="footer-text">&copy; 2024 Yogesh Mishra. All Rights Reserved.</p>
-    </div>
-</footer>
-
-
+    </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({offset:1});
-    </script>
-    <script>
-        const hamburg = document.querySelector('.hamburg')
-        const cancel = document.querySelector('.cancel')
+        AOS.init({offset: 1});
+        
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        
+        // Check for saved theme preference or use system preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            htmlElement.className = savedTheme;
+        } else {
+            // Check if user prefers dark mode
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            htmlElement.className = prefersDark ? 'dark' : 'light';
+        }
+        
+        // Toggle theme when button is clicked
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.className;
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            htmlElement.className = newTheme;
+            localStorage.setItem('theme', newTheme);
+        });
+        
+        // Mobile menu functionality
+        const hamburg = document.querySelector('.hamburg');
+        const cancel = document.querySelector('.cancel');
         const navbar = document.querySelector('.dropmenu');
         
-        hamburg.addEventListener('click', ()=>{
-            navbar.style.transform = "translateY(0px)"
-            hamburg.style.display = 'none'
-        })
-        cancel.addEventListener('click', ()=>{
-            navbar.style.transform = "translateY(-300px)"
-            hamburg.style.display = 'block'
-        })
+        hamburg.addEventListener('click', () => {
+            navbar.style.transform = "translateY(0px)";
+            hamburg.style.display = 'none';
+        });
+        
+        cancel.addEventListener('click', () => {
+            navbar.style.transform = "translateY(-300px)";
+            hamburg.style.display = 'block';
+        });
     </script>
 </body>
 </html>

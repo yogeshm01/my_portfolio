@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Yogesh Mishra</title>
+    <link rel="icon" type="image/png" href="images/pfp.png">
     <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -18,6 +20,9 @@
                 <a href="index.html#about">About</a>
                 <a href="index.html#projects">Projects</a>
             </div>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="ri-moon-line"></i>
+            </button>
             <svg xmlns="http://www.w3.org/2000/svg" class="hamburg" height="32" width="34" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
         </div>
         <div class="dropmenu">
@@ -75,6 +80,31 @@
         const hamburg = document.querySelector('.hamburg')
         const cancel = document.querySelector('.cancel')
         const navbar = document.querySelector('.dropmenu');
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        // Check for saved theme preference or use default
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        // Apply the saved theme on page load
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeIcon.classList.replace('ri-moon-line', 'ri-sun-line');
+        }
+        
+        // Toggle theme when button is clicked
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            
+            // Update icon based on current theme
+            if (document.body.classList.contains('dark-theme')) {
+                themeIcon.classList.replace('ri-moon-line', 'ri-sun-line');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.classList.replace('ri-sun-line', 'ri-moon-line');
+                localStorage.setItem('theme', 'light');
+            }
+        });
         
         hamburg.addEventListener('click', ()=>{
             navbar.style.transform = "translateY(0px)"
